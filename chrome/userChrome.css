@@ -1,0 +1,40 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* tabs all roundy */
+.tab-background,
+.tab-loading-burst {
+border: none !important;
+border-radius: 15px !important;
+}
+/* get rid of lines on selected/hovered tabs */
+.tab-line { display: none !important; }
+/* (create this at any folders you have and change Folder_Name without forgetting the " " !) */
+#personal-bookmarks .bookmark-item[container="true"][label="Gayming; resources"] {
+list-style-image: url('icon.png') !important; /* don't forget the quotes or put directly the base64.svg icon line*/
+-moz-image-region: auto !important; }
+#personal-bookmarks .bookmark-item[container="true"][label="H-gayming"] {
+list-style-image: url('fumicon.png') !important; /* don't forget the quotes or put directly the base64.svg icon line*/
+-moz-image-region: auto !important; }
+#personal-bookmarks .bookmark-item[container="true"][label="AI dungeon resources"] {
+list-style-image: url('aidungeonicon.png') !important; /* don't forget the quotes or put directly the base64.svg icon line*/
+-moz-image-region: auto !important; }
+#personal-bookmarks .bookmark-item[container="true"][label="DEALS"] {
+list-style-image: url('euro-icon-24.png') !important; /* don't forget the quotes or put directly the base64.svg icon line*/
+-moz-image-region: auto !important; }
+#personal-bookmarks .bookmark-item[container="true"][label="Fun"] {
+list-style-image: url('shonenjumpicon.png') !important; /* don't forget the quotes or put directly the base64.svg icon line*/
+-moz-image-region: auto !important; }
+/* tabbrowser colors 6nth cycle*/
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+1) .tab-background {background-color: #5d1818 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+2) .tab-background {background-color: #9aa21e !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+3) .tab-background {background-color: #2943bc !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+4) .tab-background {background-color: #ed49eb !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+5) .tab-background {background-color: #726f6a !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+6) .tab-background {background-color: #6fcd8d !important;}
+panelview{ background: rgb(40,40,70,0.7) !important }
+/* Use a background image for the toolbars:
+   (Substitute your image file for background.gif) */
+ menubar, toolbox, toolbar, .tabbrowser-tabs {
+   background-image: url("CirnoLandscapebanner.jpg") !important;
+   background-color: none !important;
+   background-repeat: no-repeat !important;
+   }
